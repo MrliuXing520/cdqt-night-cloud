@@ -1,0 +1,43 @@
+server:
+   port: 8080 #端口
+spring:
+   servlet:
+      multipart:
+         enabled: true #是否开启批量上传
+         max-file-size: 128MB #单个文件最大大小
+         max-request-size: 1024MB #上传总数据量大小
+   jackson: #jackson时间序列化配置
+      default-property-inclusion: always #序列化参数
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+   mvc: #spring mvc 时间序列化配置
+      date-format: yyyy-MM-dd HH:mm:ss
+   datasource: #数据源配置
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://rm-bp15mxgo315i70be9xo.mysql.rds.aliyuncs.com:3306/animal?serverTimezone=UTC
+      username: user_lx
+      password: Lx5201314++
+      hikari:
+         minimum-idle: 5
+         maximum-pool-size: 15
+         auto-commit: true
+         idle-timeout: 30000
+         pool-name: HikariCP
+         max-lifetime: 1800000
+         connection-timeout: 30000
+         connection-test-query: SELECT 1
+   redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      password: 
+      timeout: 5000
+      pool:
+         max-active: 50
+         max-wait: 3000
+         min-idle: 5
+         max-idle: 15
+mybatis:
+   configuration:
+      call-setters-on-nulls: true #为null也返回
