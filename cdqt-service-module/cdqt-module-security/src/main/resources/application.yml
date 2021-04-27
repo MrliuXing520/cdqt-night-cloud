@@ -20,15 +20,15 @@ spring:
       jdbc-url: jdbc:mysql://192.168.1.4:3306/cdqt?useUnicode=true&characterEncoding=utf8&mysqlEncoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8
       username: cdqt
       password: 123456
-      hikari:
-         minimum-idle: 5
-         maximum-pool-size: 15
-         auto-commit: true
-         idle-timeout: 30000
-         pool-name: HikariCP
-         max-lifetime: 1800000
-         connection-timeout: 30000
-         connection-test-query: SELECT 1
+      initialization-mode: always
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: HikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
    redis:
       database: 0
       host: 192.168.1.4
