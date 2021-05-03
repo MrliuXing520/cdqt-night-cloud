@@ -19,4 +19,4 @@
 
 * 项目介绍
 
-1. 基于[Spring Cloud Hoxton.SR3](https://cloud.spring.io/spring-cloud-static/Hoxton.SR3/reference/html/spring-cloud.html) 和 [Spring Boot 2.2.5](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/)的最新版本。
+1. 基于[Spring Cloud Hoxton.SR3](https://cloud.spring.io/spring-cloud-static/Hoxton.SR3/reference/html/spring-cloud.html) 和 [Spring Boot 2.2.5](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/)的最新版本
